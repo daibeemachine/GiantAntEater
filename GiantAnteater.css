@@ -1,0 +1,39 @@
+.title
+{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.title img
+{
+  width: clamp(200px, 50vw, 800px);
+  height: auto;
+}
+
+.title_card
+{
+align-content: center;
+}
+
+.anteater_brain img
+{
+    width: 20vw;
+    height: auto;
+}
+
+.anteater_brain_pictures
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+.ant_eater
+{
+  width: 20vw;
+  height: auto;
+}
