@@ -1,15 +1,39 @@
+
+:root
+{
+    display: flex;
+    flex-wrap: wrap;
+    --title-font-size: clamp(0.125rem, 2vw, 1.25rem);
+    --image_width: clamp(25%, 30vw, 50%);
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-family: Inter, sans-serif;
+}
+
+.contents h2
+{
+    padding-top: 5vh;
+    text-align: center;
+}
 .title
 {
+  font-size: var(--title-font-size);
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: space-around;
+  justify-self: center;
 }
+
 
 .title img
 {
-  width: clamp(200px, 50vw, 800px);
+  object-fit:contain;
+  width: var(--image_width);
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .title_card
@@ -35,5 +59,24 @@ align-content: center;
 .ant_eater
 {
   width: 20vw;
+  height: auto;
+}
+
+.ant_regions
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.agonistic_behaviors img
+{
+    width: var(--image_width);
+    height: auto;
+    object-fit: contain;
+}
+
+.agonistic_image
+{
+  width: var(--image_width);
   height: auto;
 }
